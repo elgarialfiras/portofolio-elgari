@@ -35,10 +35,8 @@ const projects = [
     image: "/mpk1.webp", 
     gallery: [
       "/mpk1.webp",
-      "/mpk2.mp4",
       "/mpk3.webp",
-      "/mpk4.webp",
-      "/mpk5.mp4"
+      "/mpk4.webp"
     ],
     desc: "A creative campaign themed 'Once Upon Our Time' aimed at celebrating digital arts and media.", 
     problem: "Needed a cohesive narrative to tie various creative sub-events together under one umbrella.", 
@@ -102,10 +100,7 @@ const projects = [
       "/mi1.webp",
       "/mi2.mp4",
       "/mi3.webp", 
-      "/mi4.mp4", 
-      "/mi5.webp", 
-      "/mi6.mp4", 
-      "/mi7.mp4", 
+      "/mi5.webp",  
       "/mi8.webp", 
     ],
     desc: "Exploring AI tools and prompt engineering for creative media workflows.", 

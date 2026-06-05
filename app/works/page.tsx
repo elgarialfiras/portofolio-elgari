@@ -28,10 +28,8 @@ const allProjects = [
     image: "/mpk1.webp", 
     gallery: [
       "/mpk1.webp",
-      "/mpk2.mp4",
       "/mpk3.webp",
       "/mpk4.webp",
-      "/mpk5.mp4"
     ],
     desc: "A creative campaign themed 'Once Upon Our Time' aimed at celebrating digital arts and media.", 
     problem: "Needed a cohesive narrative to tie various creative sub-events together under one umbrella.", 
@@ -95,10 +93,7 @@ const allProjects = [
       "/mi1.webp",
       "/mi2.mp4",
       "/mi3.webp", 
-      "/mi4.mp4", 
-      "/mi5.webp", 
-      "/mi6.mp4", 
-      "/mi7.mp4", 
+      "/mi5.webp",  
       "/mi8.webp", 
     ],
     desc: "Exploring AI tools and prompt engineering for creative media workflows.", 
@@ -144,10 +139,7 @@ const allProjects = [
     title: "Tsijinema", category: "Branding & Campaign", year: "2025", 
     image: "/tsi1.webp", 
     gallery: [
-      "/tsi2.mp4",
       "/tsi3.webp", 
-      "/tsi4.mp4", 
-      "/tsi5.mp4", 
     ],
     desc: "Promotional campaign and branding for the Prorientation UI event.", 
     problem: "Needed to engage new students effectively.", 
