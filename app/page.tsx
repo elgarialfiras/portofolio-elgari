@@ -452,27 +452,28 @@ export default function Home() {
           <span className="text-sm font-medium tracking-wide">Let's Connect</span>
         </div>
 
-        {/* Statistik (Laptop: Horizontal ke samping, HP: Vertikal ke bawah) */}
-        <div className="absolute right-6 bottom-[12%] md:right-12 md:bottom-16 md:top-auto md:translate-y-0 flex flex-col md:flex-row gap-6 md:gap-16 z-20 text-white drop-shadow-lg items-end">
+        {/* Statistik (SELALU HORIZONTAL KESAMPING) */}
+        {/* HP: Di atas nama, Laptop: Di kanan sejajar Let's Connect */}
+        <div className="absolute z-20 text-white drop-shadow-lg left-6 right-6 bottom-[18dvh] flex flex-row justify-between md:left-auto md:bottom-auto md:right-12 md:top-1/2 md:-translate-y-1/2 md:justify-end md:gap-12">
           
-          <div className="flex flex-col items-end text-right">
-            <h2 className="text-4xl md:text-6xl font-bold tracking-tighter">+4</h2>
-            <p className="text-[10px] md:text-xs text-gray-100 mt-1 md:mt-2 tracking-widest uppercase md:whitespace-nowrap">
-              Years of<br className="md:hidden"/> Experience
+          <div className="flex flex-col items-center md:items-start text-center md:text-left">
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tighter">+4</h2>
+            <p className="text-[10px] text-gray-100 mt-1 md:mt-2 tracking-widest uppercase max-w-[90px]">
+              Years of<br/>Experience
             </p>
           </div>
           
-          <div className="flex flex-col items-end text-right">
-            <h2 className="text-4xl md:text-6xl font-bold tracking-tighter">+30</h2>
-            <p className="text-[10px] md:text-xs text-gray-100 mt-1 md:mt-2 tracking-widest uppercase md:whitespace-nowrap">
-              Creative<br className="md:hidden"/> Projects
+          <div className="flex flex-col items-center md:items-start text-center md:text-left">
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tighter">+30</h2>
+            <p className="text-[10px] text-gray-100 mt-1 md:mt-2 tracking-widest uppercase max-w-[90px]">
+              Creative<br/>Projects
             </p>
           </div>
           
-          <div className="flex flex-col items-end text-right">
-            <h2 className="text-4xl md:text-6xl font-bold tracking-tighter">+4</h2>
-            <p className="text-[10px] md:text-xs text-gray-100 mt-1 md:mt-2 tracking-widest uppercase md:whitespace-nowrap">
-              National-Level<br className="md:hidden"/> Achievements
+          <div className="flex flex-col items-center md:items-start text-center md:text-left">
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tighter">+4</h2>
+            <p className="text-[10px] text-gray-100 mt-1 md:mt-2 tracking-widest uppercase max-w-[120px]">
+              National-Level<br/>Achievements
             </p>
           </div>
 
