@@ -446,15 +446,17 @@ export default function Home() {
           <img src="/elgari-photo.png" alt="Elgari Portrait" className="h-[95vh] md:h-[110vh] w-auto max-w-none object-cover object-bottom drop-shadow-[0_20px_60px_rgba(0,0,0,0.35)]" />
         </div>
 
-        <div className="absolute left-6 md:left-12 top-1/2 -translate-y-1/2 bg-[#111111] rounded-2xl py-3 px-6 flex items-center gap-4 z-20 shadow-2xl border border-gray-800 cursor-pointer hover:scale-105 transition-transform duration-300">
+        {/* Let's Connect (Dikunci di kiri atas pada layar HP) */}
+        <div className="absolute left-6 md:left-12 top-[15%] md:top-1/2 md:-translate-y-1/2 bg-[#111111] rounded-2xl py-3 px-6 flex items-center gap-4 z-20 shadow-2xl border border-gray-800 cursor-pointer hover:scale-105 transition-transform duration-300">
           <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse shadow-[0_0_10px_rgba(34,197,94,0.7)]"></div>
           <span className="text-sm font-medium tracking-wide">Let's Connect</span>
         </div>
 
-        <div className="absolute right-6 md:right-12 top-1/2 -translate-y-1/2 flex gap-6 md:gap-10 z-20 text-white drop-shadow-lg">
-          <div className="flex flex-col items-center"><h2 className="text-4xl md:text-5xl font-bold tracking-tighter">+4</h2><p className="text-[10px] text-gray-100 mt-2 tracking-widest uppercase text-center max-w-[90px]">Years of<br/>Experience</p></div>
-          <div className="flex flex-col items-center"><h2 className="text-4xl md:text-5xl font-bold tracking-tighter">+30</h2><p className="text-[10px] text-gray-100 mt-2 tracking-widest uppercase text-center max-w-[90px]">Creative<br/>Projects</p></div>
-          <div className="flex flex-col items-center"><h2 className="text-4xl md:text-5xl font-bold tracking-tighter">+4</h2><p className="text-[10px] text-gray-100 mt-2 tracking-widest uppercase text-center max-w-[120px]">National-Level<br/>Achievements</p></div>
+        {/* Statistik (Dikunci di bawah pada layar HP agar tidak menabrak) */}
+        <div className="absolute left-6 right-6 md:left-auto md:right-12 bottom-[12%] md:bottom-auto md:top-1/2 md:-translate-y-1/2 flex justify-between md:flex-col gap-4 md:gap-10 z-20 text-white drop-shadow-lg">
+          <div className="flex flex-col items-center md:items-end"><h2 className="text-4xl md:text-5xl font-bold tracking-tighter">+4</h2><p className="text-[10px] text-gray-100 mt-2 tracking-widest uppercase text-center md:text-right max-w-[90px]">Years of<br/>Experience</p></div>
+          <div className="flex flex-col items-center md:items-end"><h2 className="text-4xl md:text-5xl font-bold tracking-tighter">+30</h2><p className="text-[10px] text-gray-100 mt-2 tracking-widest uppercase text-center md:text-right max-w-[90px]">Creative<br/>Projects</p></div>
+          <div className="flex flex-col items-center md:items-end"><h2 className="text-4xl md:text-5xl font-bold tracking-tighter">+4</h2><p className="text-[10px] text-gray-100 mt-2 tracking-widest uppercase text-center md:text-right max-w-[120px]">National-Level<br/>Achievements</p></div>
         </div>
 
         <motion.div animate={{ y: [0, -15, 0], x: [0, 8, 0] }} transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }} className="absolute top-[30%] left-[15%] md:left-[35%] z-20 pointer-events-none">

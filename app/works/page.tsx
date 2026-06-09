@@ -228,11 +228,14 @@ export default function WorksPage() {
   return (
     <main className="bg-white text-black min-h-screen font-sans selection:bg-black selection:text-white">
       
-      {/* --- PRELOADER MASUK & KELUAR --- */}
+      {/* --- PRELOADER MASUK --- */}
       <AnimatePresence mode="wait">
         {isEntering && (
-          <motion.div key="entrance" variants={slideUp} initial="initial" exit="exit" className="fixed inset-0 z-[100] flex items-center justify-center bg-[#1C1D20] text-white">
-            <h1 className="text-4xl font-light tracking-tight flex items-center gap-4"><span className="w-2 h-2 bg-white rounded-full"></span>Work</h1>
+          <motion.div key="entrance" variants={slideUp} initial="initial" exit="exit" className="fixed inset-0 z-[1000] flex items-center justify-center bg-[#1C1D20] text-white h-[100dvh]">
+            <h1 className="text-4xl md:text-5xl font-light tracking-tight relative flex items-center justify-center">
+              <span className="absolute -left-8 md:-left-10 w-3 h-3 bg-white rounded-full animate-pulse"></span>
+              Work
+            </h1>
             <svg className="absolute top-full left-0 w-full h-[15vh] fill-[#1C1D20] pointer-events-none" viewBox="0 0 100 100" preserveAspectRatio="none">
               <motion.path variants={curveDown} initial="initial" exit="exit" />
             </svg>
@@ -240,11 +243,12 @@ export default function WorksPage() {
         )}
       </AnimatePresence>
 
+      {/* --- PRELOADER KELUAR (Saat pindah halaman) --- */}
       <AnimatePresence mode="wait">
         {isExiting && (
-          <motion.div key="exit" variants={slideUpEnter} initial="initial" animate="enter" className="fixed inset-0 z-[100] flex items-center justify-center bg-[#1C1D20] text-white">
-             <h1 className="text-4xl font-light tracking-tight flex items-center gap-4">
-              <span className="w-2 h-2 bg-white rounded-full"></span>
+          <motion.div key="exit" variants={slideUpEnter} initial="initial" animate="enter" className="fixed inset-0 z-[1000] flex items-center justify-center bg-[#1C1D20] text-white w-full h-[100dvh]">
+            <h1 className="text-4xl md:text-5xl font-light tracking-tight relative flex items-center justify-center">
+              <span className="absolute -left-8 md:-left-10 w-3 h-3 bg-white rounded-full animate-pulse"></span>
               {targetPath === "/contact" ? "Contact" : "Home"}
             </h1>
             <svg className="absolute bottom-full left-0 w-full h-[15vh] fill-[#1C1D20] pointer-events-none" viewBox="0 0 100 100" preserveAspectRatio="none">
