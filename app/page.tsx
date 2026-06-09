@@ -452,11 +452,30 @@ export default function Home() {
           <span className="text-sm font-medium tracking-wide">Let's Connect</span>
         </div>
 
-        {/* Statistik (Dikunci di bawah pada layar HP agar tidak menabrak) */}
-        <div className="absolute left-6 right-6 md:left-auto md:right-12 bottom-[12%] md:bottom-auto md:top-1/2 md:-translate-y-1/2 flex justify-between md:flex-col gap-4 md:gap-10 z-20 text-white drop-shadow-lg">
-          <div className="flex flex-col items-center md:items-end"><h2 className="text-4xl md:text-5xl font-bold tracking-tighter">+4</h2><p className="text-[10px] text-gray-100 mt-2 tracking-widest uppercase text-center md:text-right max-w-[90px]">Years of<br/>Experience</p></div>
-          <div className="flex flex-col items-center md:items-end"><h2 className="text-4xl md:text-5xl font-bold tracking-tighter">+30</h2><p className="text-[10px] text-gray-100 mt-2 tracking-widest uppercase text-center md:text-right max-w-[90px]">Creative<br/>Projects</p></div>
-          <div className="flex flex-col items-center md:items-end"><h2 className="text-4xl md:text-5xl font-bold tracking-tighter">+4</h2><p className="text-[10px] text-gray-100 mt-2 tracking-widest uppercase text-center md:text-right max-w-[120px]">National-Level<br/>Achievements</p></div>
+        {/* Statistik (Laptop: Horizontal ke samping, HP: Vertikal ke bawah) */}
+        <div className="absolute right-6 bottom-[12%] md:right-12 md:bottom-16 md:top-auto md:translate-y-0 flex flex-col md:flex-row gap-6 md:gap-16 z-20 text-white drop-shadow-lg items-end">
+          
+          <div className="flex flex-col items-end text-right">
+            <h2 className="text-4xl md:text-6xl font-bold tracking-tighter">+4</h2>
+            <p className="text-[10px] md:text-xs text-gray-100 mt-1 md:mt-2 tracking-widest uppercase md:whitespace-nowrap">
+              Years of<br className="md:hidden"/> Experience
+            </p>
+          </div>
+          
+          <div className="flex flex-col items-end text-right">
+            <h2 className="text-4xl md:text-6xl font-bold tracking-tighter">+30</h2>
+            <p className="text-[10px] md:text-xs text-gray-100 mt-1 md:mt-2 tracking-widest uppercase md:whitespace-nowrap">
+              Creative<br className="md:hidden"/> Projects
+            </p>
+          </div>
+          
+          <div className="flex flex-col items-end text-right">
+            <h2 className="text-4xl md:text-6xl font-bold tracking-tighter">+4</h2>
+            <p className="text-[10px] md:text-xs text-gray-100 mt-1 md:mt-2 tracking-widest uppercase md:whitespace-nowrap">
+              National-Level<br className="md:hidden"/> Achievements
+            </p>
+          </div>
+
         </div>
 
         <motion.div animate={{ y: [0, -15, 0], x: [0, 8, 0] }} transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }} className="absolute top-[30%] left-[15%] md:left-[35%] z-20 pointer-events-none">
