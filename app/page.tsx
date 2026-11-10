@@ -654,7 +654,7 @@ export default function Home() {
                     </div>
                     <p className="text-gray-500 mt-2 text-sm md:text-base">Rey For Himpunan Pengusaha Muda Indonesia</p>
                   </div>
-                  <p className="text-xs uppercase tracking-widest font-bold text-gray-400 mt-4 md:mt-0">Mei 2026 - Present</p>
+                  <p className="text-xs uppercase tracking-widest font-bold text-gray-400 mt-4 md:mt-0">Mei 2026 - June 2026</p>
                 </div>
 
                 <div className="fade-up border-t border-gray-200 py-8 flex flex-col md:flex-row md:items-center justify-between group hover:pl-4 transition-all duration-300 cursor-default">
@@ -702,7 +702,7 @@ export default function Home() {
                     </div>
                     <p className="text-gray-500 mt-2 text-sm md:text-base">Media Pesta Karya</p>
                   </div>
-                  <p className="text-xs uppercase tracking-widest font-bold text-gray-400 mt-4 md:mt-0">Feb 2026 - Present</p>
+                  <p className="text-xs uppercase tracking-widest font-bold text-gray-400 mt-4 md:mt-0">Feb 2026 - Mei 2026</p>
                 </div>
 
                 <div className="fade-up border-t border-gray-200 py-8 flex flex-col md:flex-row md:items-center justify-between group hover:pl-4 transition-all duration-300 cursor-default">
